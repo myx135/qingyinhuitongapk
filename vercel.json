@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/mobile.html",
+      "has": [
+        {
+          "type": "header",
+          "key": "User-Agent",
+          "value": ".*(Android|iPhone|iPad|iPod).*"
+        }
+      ]
+    }
+  ]
+}
