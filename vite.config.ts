@@ -9,5 +9,10 @@ export default defineConfig({
       '@': resolve(__dirname, 'src')
     }
   },
-  base: './'
+  base: './',
+  build: {
+    rollupOptions: {
+      input: resolve(__dirname, 'index.html')
+    }
+  }
 })
